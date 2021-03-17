@@ -21,10 +21,21 @@ hiSay();
 
 // 10 and 20 this function's arguments
 
-numberAddition(10, 20);
+// numberAddition(10, 20);
 
-// firstNumber and secondNumber are parametre
+// // firstNumber and secondNumber are parameter
+// //  parameter field function
+
+// function numberAddition (firstNumber, secondNumber) {
+//     console.log("Number's addition : " + (firstNumber + secondNumber));
+// }
+
+
+let sumNumbers = numberAddition(10, 40);
+console.log(sumNumbers);
+
 
 function numberAddition (firstNumber, secondNumber) {
-    console.log("Number's addition : " + (firstNumber + secondNumber));
+    return firstNumber + secondNumber;
+    
 }
