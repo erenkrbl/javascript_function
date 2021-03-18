@@ -23,3 +23,21 @@ console.log(myFriends.toString() + " Deleted element : " + delFirstElement);
 
 let addFirstElement = myFriends.unshift("Harold");
 console.log(myFriends.toString() + " Added element : " + addFirstElement);
+
+// delete
+
+delete myFriends[1];
+console.log(myFriends.toString());
+
+// splice() Element delete and add start, deleted count, added element
+
+let numbers = [1, 2, 3, 4, 5, 6, 7] 
+
+numbers.splice(8, 0, 9, 10, "11");
+console.log(numbers.toString());
+
+let delNumbers = numbers.splice(0, 4);
+console.log(numbers.toString());
+console.log(delNumbers.toString());
+console.log(delNumbers);
+
