@@ -41,3 +41,14 @@ console.log(numbers.toString());
 console.log(delNumbers.toString());
 console.log(delNumbers);
 
+// concat
+
+let oddNumbers = [1, 3, 5, 7]
+let evenNumbers = [2, 4, 6, 8];
+
+let myNumbers = oddNumbers.concat(evenNumbers);
+console.log(myNumbers.toString());
+console.log(myNumbers);
+
+let newNumbers = myNumbers.slice(0, 4);
+console.log(newNumbers.toString() + " / " + myNumbers.toString());
