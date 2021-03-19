@@ -11,3 +11,15 @@ numbers.forEach(twoParameterTake);
 function twoParameterTake (number, index) {
     console.log(number, index)
 }
+
+// Custom function
+
+writeArray(numbers, function(value, index) {
+    console.log("Value : " + value + " index : " + index);
+});
+
+function writeArray (array, callback) {
+    for (i = 0; i < array.length; i++) {
+        callback(array[i], i)
+    }
+}
