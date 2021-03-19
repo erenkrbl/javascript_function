@@ -38,3 +38,21 @@ console.log(ourPerson);
 const yourPerson = persons.map((person) => person.firstName + " " + person.lastName);
 
 console.log(yourPerson);
+
+// custom function
+
+const myNumbers = [1, 2, 3, 4, 5, 6];
+
+function customMap(myNumbers, operation) {
+    const newArray = [];
+    for (i = 0; i < myNumbers.length; i++) {
+        newArray.push(operation(myNumbers[i]));
+    }
+    return newArray;
+}
+
+const createdNewArray = customMap(myNumbers, function(number) {
+    return number * 2;
+});
+
+console.log(createdNewArray);
