@@ -23,15 +23,18 @@ const bookPageNumbers = books.map(function (book) {
 
 console.log(bookPageNumbers);
 
-const person = [
+const persons = [
     {firstName : 'Oliver', lastName : 'Samba'},
     {firstName : 'Joseph', lastName : 'Smith'},
     {firstName : 'John', lastName : 'Zack'},
 ];
 
-const ourPerson = person.map(function(personName) {
+const ourPerson = persons.map(function(personName) {
     return personName.firstName + " " + personName.lastName;
 });
 
 console.log(ourPerson);
 
+const yourPerson = persons.map((person) => person.firstName + " " + person.lastName);
+
+console.log(yourPerson);
