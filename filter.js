@@ -8,6 +8,7 @@ const plants = [
     {pName : 'celery', kind : 'vegetables' },
 ];
 
+/*
 function findFruits () {
     const newArray = [];
     for (i = 0; i < plants.length; i++) {
@@ -32,3 +33,18 @@ function findVegetables () {
 console.log(plants);
 console.log(findFruits());
 console.log(findVegetables());
+*/
+
+// filter
+
+const fruits = plants.filter(function (plant) {
+    return plant.kind === 'fruits';
+});
+
+
+const vegatables = plants.filter(function (plant) {
+    return plant.kind === 'vegetables';
+});
+
+console.log(fruits);
+console.log(vegatables);
