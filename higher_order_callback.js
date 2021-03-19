@@ -62,10 +62,30 @@ const transactionsAll = function(array, transactions) {
 
 // higher order order function :Parametre olarak fonksiyon alan ve/veya
 // return olarak fonksiyon döndüren fonksiyolardır.
-// izi ilemleri higher order fonksiyondur.
+// dizi ilemleri higher order fonksiyondur.
+// Çağrıldığında bize değer döndüren fonsiyonlar callback fonksiyonlardır.
+// exp.( twoWithMultiply, twoWithDivision, threeAdd)
 
 transactionsAll(myArray, twoWithMultiply);
 transactionsAll(myArray, twoWithDivision);
 transactionsAll(myArray, threeAdd)
 
 console.log(myArray);
+
+function sayMyName(firstName, lastName) {
+    console.log("Hello " + firstName + " " + lastName);
+}
+
+sayMyName('Ryan', 'Wills');
+
+function toldMyName(firstName, lastName, callback) {
+    const message = "HELLO " + firstName.toUpperCase() + " " + lastName.toUpperCase();
+    callback(message);
+    //console.log(message);
+}
+
+toldMyName('George', 'Bush', function(msj) {
+    console.log(msj);
+});
+
+
