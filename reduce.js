@@ -15,9 +15,18 @@ sumFind();
 
 // reduce
 
-const sumResult = numbers.reduce(function(sum, curr, index) {
-    return sum = sum + curr;
-}, 0);
+// const sumResult = numbers.reduce(function(sum, curr, index) {
+//     return sum = sum + curr;
+// }, 0);
 
-console.log(sumResult);
+// console.log(sumResult);
+
+// map with solution
+
+const mapWithMultiply = numbers.map(function(number) {
+    return number * 2;
+});
+
+console.log(mapWithMultiply);
+
 
