@@ -23,12 +23,22 @@ function myFilterFunc(array, filterConditions) {
     return newArray;
 }
 
-function otherFunc (plant) {
-    return plant.kind === 'fruits';
-}
+// function otherFunc (plant) {
+//     return plant.kind === 'fruits';
+// }
 
-const fruits = myFilterFunc(plants, otherFunc);
+//const fruits = myFilterFunc(plants, otherFunc);
 //const vegetables = myFilterFunc(plants, otherFunc);
+
+// const fruits = myFilterFunc(plants, function (plant) {
+//    return plant.kind === 'fruits'
+// });
+
+// arrow function
+
+const fruits = myFilterFunc(plants, (plant) => plant.kind === 'fruits');
+ 
+
 
 console.log(fruits);
 //console.log(vegetables);
