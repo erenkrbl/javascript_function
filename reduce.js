@@ -29,4 +29,14 @@ const mapWithMultiply = numbers.map(function(number) {
 
 console.log(mapWithMultiply);
 
+// reduce with multiplication
+
+const reduceWithMutiply = numbers.reduce(function(preArray, currentNumber) {
+    preArray.push(currentNumber * 2);
+    return preArray;
+
+}, []);
+
+console.log(reduceWithMutiply);
+
 
