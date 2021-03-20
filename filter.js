@@ -8,6 +8,32 @@ const plants = [
     {pName : 'celery', kind : 'vegetables' },
 ];
 
+
+// custom function
+
+function myFilterFunc(array, filterConditions) {
+    newArray = [];
+    for (i = 0; i < array.length; i++) {
+        const result = filterConditions(array[i]);
+        if (result) {
+            newArray.push(array[i]);
+        }
+    }
+
+    return newArray;
+}
+
+function otherFunc (plant) {
+    return plant.kind === 'fruits';
+}
+
+const fruits = myFilterFunc(plants, otherFunc);
+//const vegetables = myFilterFunc(plants, otherFunc);
+
+console.log(fruits);
+//console.log(vegetables);
+
+
 /*
 function findFruits () {
     const newArray = [];
@@ -36,7 +62,7 @@ console.log(findVegetables());
 */
 
 // filter
-
+/*
 const fruits = plants.filter(function (plant) {
     return plant.kind === 'fruits';
 });
@@ -48,3 +74,4 @@ const vegatables = plants.filter(function (plant) {
 
 console.log(fruits);
 console.log(vegatables);
+*/
