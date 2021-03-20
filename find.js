@@ -13,4 +13,14 @@ const result = persons.find(function (person) {
     return person.id === 15;
 });
 
+// classic method 
+function findMethod (persons) {
+    for (i = 0; i < persons.length; i++) {
+        if (persons[i].id === 14) {
+            return persons[i];
+        }
+    }
+}
+
 console.log(result);
+console.log(findMethod(persons));
