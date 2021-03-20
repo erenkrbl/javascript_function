@@ -1,5 +1,6 @@
 const numbers = [1, 2, 3, 4, 5, 6];
 
+/*
 
 function sumFind () {
     let sum = 0;
@@ -10,6 +11,13 @@ function sumFind () {
 }
 
 sumFind();
+*/
 
+// reduce
 
+const sumResult = numbers.reduce(function(sum, curr, index) {
+    return sum = sum + curr;
+}, 0);
+
+console.log(sumResult);
 
