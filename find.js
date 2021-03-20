@@ -9,6 +9,26 @@ const persons = [
     {id : 16, firstName : 'Jimmy'},
 ];
 
+// higher order function
+
+function selfFindFunc(persons, searchValue) {
+    let findElement = undefined;
+    for (let i = 0; i < persons.length; i++) {
+        if (searchValue(persons[i])) {
+            return persons[i];
+        }
+    }
+    return findElement;
+}
+
+const result = selfFindFunc(persons, function(person) {
+    return person.id === 10;
+});
+
+console.log(result);
+
+
+/*
 const result = persons.find(function (person) {
     return person.id === 15;
 });
@@ -24,3 +44,4 @@ function findMethod (persons) {
 
 console.log(result);
 console.log(findMethod(persons));
+*/
