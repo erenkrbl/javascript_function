@@ -40,3 +40,6 @@ const reduceWithMutiply = numbers.reduce(function(preArray, currentNumber) {
 console.log(reduceWithMutiply);
 
 
+// reduce with filter
+
+
