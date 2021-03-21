@@ -42,4 +42,10 @@ console.log(reduceWithMutiply);
 
 // reduce with filter
 
+const newArray = numbers.filter(function(number, index) {
+    return number < 3;
+});
+
+console.log(newArray);
+
 
