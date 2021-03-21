@@ -23,6 +23,7 @@ sumFind();
 
 // map with solution
 
+/*
 const mapWithMultiply = numbers.map(function(number) {
     return number * 2;
 });
@@ -55,5 +56,26 @@ const newArrayWithReduce = numbers.reduce(function(previousNum, currNumber, inde
 
 console.log(newArray);
 console.log(newArrayWithReduce);
+*/
+
+// reduce with find
+
+const findNumber = numbers.find(function(number, index) {
+    return number === 2;
+});
+console.log(findNumber);
+
+
+const findNumberWithReduce = numbers.reduce(function(pre, curr, index) {
+    console.log(pre, curr, index);
+    
+    if (curr === 2) {
+        return curr;
+    } else {
+        return pre;
+    }
+}, undefined);
+
+console.log(findNumberWithReduce);
 
 
