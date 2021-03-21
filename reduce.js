@@ -46,6 +46,14 @@ const newArray = numbers.filter(function(number, index) {
     return number < 3;
 });
 
+const newArrayWithReduce = numbers.reduce(function(previousNum, currNumber, index){
+    if(currNumber < 3) {
+        previousNum.push(currNumber);
+    }
+    return previousNum;
+}, []);
+
 console.log(newArray);
+console.log(newArrayWithReduce);
 
 
