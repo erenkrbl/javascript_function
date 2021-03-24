@@ -32,9 +32,30 @@ function resultFind(numbers) {
         } else {
             return sum;
         }
-    }, 0)
+    }, 0);
     return sumNumbers;
 
 }
+
 console.log(resultFind(numbers));
 // resultFind(numbers);
+
+// short way
+
+function shortWay (numbers) {
+    const result = numbers.filter(function(number) {
+        return number % 2 !== 0;
+    }).map(function(number) {
+        return number * number;
+    }).reduce(function(sum, curr) {
+        if (curr > 10) {
+            return sum = sum + curr;
+        } else {
+            return sum;
+        }
+    }, 0);
+
+    console.log(result)
+};
+
+shortWay(numbers);
