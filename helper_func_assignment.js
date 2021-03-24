@@ -41,7 +41,7 @@ console.log(resultFind(numbers));
 // resultFind(numbers);
 
 // short way
-
+/*
 function shortWay (numbers) {
     const result = numbers.filter(function(number) {
         return number % 2 !== 0;
@@ -59,3 +59,18 @@ function shortWay (numbers) {
 };
 
 shortWay(numbers);
+*/
+
+// arrow function
+
+function shortWay (numbers) {
+    const result = numbers.filter(number => number % 2 !== 0)
+        .map(number => number * number)
+        .reduce((sum, curr) => curr > 10 ? sum+=curr : sum, 0);
+
+    //console.log(result)
+    return result;
+};
+
+shortWay(numbers);
+console.log(shortWay(numbers));
