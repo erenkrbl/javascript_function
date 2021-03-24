@@ -10,12 +10,20 @@ function resultFind(numbers) {
     const oddNumber = numbers.filter(function(number) {
         return number % 2 !== 0;
     });
-    console.log("odd numbers :" + oddNumber);
+    console.log("odd numbers : " + oddNumber);
 
     const numberSquare = oddNumber.map(function(number) {
         return number * number;
     });
-    console.log(numberSquare);
+    console.log("Numbers square : " + numberSquare);
+
+    const sumNumbers = numberSquare.reduce(function(previous, number, index) {
+        if (number > 10) {
+            previous = previous + number;
+        }
+        return previous;
+    }, 0);
+    console.log(sumNumbers);
 
 }
 resultFind(numbers);
