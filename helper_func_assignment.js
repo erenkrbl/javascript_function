@@ -17,13 +17,24 @@ function resultFind(numbers) {
     });
     console.log("Numbers square : " + numberSquare);
 
-    const sumNumbers = numberSquare.reduce(function(previous, number, index) {
-        if (number > 10) {
-            previous = previous + number;
+    // const sumNumbers = numberSquare.reduce(function(previous, number, index) {
+    //     if (number > 10) {
+    //         previous = previous + number;
+    //     }
+    //     return previous;
+    // }, 0);
+    // console.log(sumNumbers);
+
+    // or 
+    const sumNumbers = numberSquare.reduce(function(sum, curr) {
+        if (curr > 10) {
+            return sum = sum + curr;
+        } else {
+            return sum;
         }
-        return previous;
-    }, 0);
-    console.log(sumNumbers);
+    }, 0)
+    return sumNumbers;
 
 }
-resultFind(numbers);
+console.log(resultFind(numbers));
+// resultFind(numbers);
