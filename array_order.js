@@ -18,6 +18,10 @@ console.log(nameStudents);
 console.log(sortFromatoz);
 
 // string array z- a order
+// reverse çalışması için sıralanmış bir dizi olmalidır.
+
+const sortFromztoa = sortFromatoz.reverse();
+console.log(sortFromztoa);
 
 
 // numbers sorting from small to large/ large to small order
