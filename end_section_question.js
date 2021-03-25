@@ -24,3 +24,27 @@ cities.sort(function(a, b) {
 console.log(cities);
 
 
+// cities.sort().reverse();
+// console.log(cities);
+
+// alınan değere kadar sayılar dizisinın fibonacci şeklinde yazdırın
+// 0 1 1 2 3 5 8 13 21 34 55 .......
+//  iki sayının toplamı bir sonraki sayıyı oluşturuyor
+
+function fibonacci(number) {
+    let resultArray = [0, 1];
+    for (i = 2; i < number; i++) {
+        const currentNumber = resultArray[i - 1] + resultArray[i - 2];
+        if (currentNumber < number) {
+            resultArray[i] = currentNumber; 
+        } else {
+            break;
+        }
+    }
+    return resultArray;
+}
+console.log(fibonacci(50));
+
+
+
+
