@@ -22,11 +22,20 @@ console.log(sortFromatoz);
 
 const sortFromztoa = sortFromatoz.reverse();
 console.log(sortFromztoa);
-*/
 
 const shortWay = nameStudents.sort().reverse();
 console.log(shortWay);
 
+*/
+
 // numbers sorting from small to large/ large to small order
+
+const numberSort = numbers.sort(function(a, b)  {
+    return a - b;
+});
+//const numberSort = numbers.sort((a, b) => a- b);
+console.log(numberSort);
+
+
 
 // object order
