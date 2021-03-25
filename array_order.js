@@ -37,6 +37,14 @@ const numberSort = numbers.sort(function(a, b)  {
 //const numberSort = numbers.sort((a, b) => a - b);
 console.log(numberSort);
 
-
-
 // object order
+
+// order by id
+// students.sort(function (a, b) {
+//     return a.id -b.id;
+// });
+
+// console.log(students);
+
+// order by age
+students.sort((a, b) => a.age - b.age);
