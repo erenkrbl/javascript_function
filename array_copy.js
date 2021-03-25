@@ -52,3 +52,15 @@ const ourName = 'John Smith';
 ourletterArray = [...ourName];
 
 console.log(ourletterArray);
+
+function sumNumbers(...parameters) {
+    let sum = 0;
+    for (number of parameters) {
+        sum = sum + number;
+    }
+    console.log(sum);
+}
+
+sumNumbers(4, 5);
+sumNumbers(4, 5, 9, 7);
+sumNumbers(4, 5, 20, 47);
