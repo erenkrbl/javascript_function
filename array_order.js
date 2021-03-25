@@ -11,7 +11,7 @@ const students = [
     {id : 15, name : 'Mike', age : 75},
     {id : 44, name : 'Camala', age : 30},
 ];
-
+/*
 // string array a-z order
 const sortFromatoz = nameStudents.sort();
 console.log(nameStudents);
@@ -22,7 +22,10 @@ console.log(sortFromatoz);
 
 const sortFromztoa = sortFromatoz.reverse();
 console.log(sortFromztoa);
+*/
 
+const shortWay = nameStudents.sort().reverse();
+console.log(shortWay);
 
 // numbers sorting from small to large/ large to small order
 
