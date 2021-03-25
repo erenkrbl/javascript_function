@@ -12,10 +12,18 @@ const students = [
     {id : 44, name : 'Camala', age : 30},
 ];
 
-let copy = [];
+// let copy = [];
 
-for (isim of nameStudents) {
-    copy.push(isim);
-}
+// for (isim of nameStudents) {
+//     copy.push(isim);
+// }
+
+//copy = Array.from(nameStudents);
+
+// spread operatör
+
+copy = [...nameStudents];
+
+copy.sort();
 console.log(copy);
 console.log(nameStudents);
