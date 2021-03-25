@@ -33,6 +33,16 @@ console.log(shortWay);
 // const numberSort = numbers.sort(function(a, b)  {
 //     //return a - b;
 //     return b - a;
+
+numbers.sort(function(a, b) {
+    if (a < b) {
+        return 1;
+    } else if (a > b) {
+        return -1;
+    } else return 0;
+});
+
+console.log(numbers);
 // });
 // //const numberSort = numbers.sort((a, b) => a - b);
 // console.log(numberSort);
@@ -53,13 +63,15 @@ console.log(shortWay);
 // order by name
 
 students.sort(function(a, b) {
-    if (a.name > b.age) {
-        return 1;
-    } else if (a.name < b.name) {
-        return -1;
-    } else {
-        return 0;
-    }
+    // if (a.name > b.age) {
+    //     return 1;
+    // } else if (a.name < b.name) {
+    //     return -1;
+    // } else {
+    //     return 0;
+    // }
+
+    return (a.name < b.name) ? 1 : (a.name > b.name ? -1 : 0);
 });
 
 console.log(students);
