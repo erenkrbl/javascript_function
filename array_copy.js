@@ -22,8 +22,33 @@ const students = [
 
 // spread operatör
 
-copy = [...nameStudents];
+// copy = [...nameStudents];
 
-copy.sort();
-console.log(copy);
-console.log(nameStudents);
+// copy.sort();
+// console.log(copy);
+// console.log(nameStudents);
+
+
+// split
+
+const myName = 'Harold Oliver';
+
+letterArray = myName.split(' ');
+
+console.log(letterArray);
+
+const yourName = 'Eric Ryan';
+
+yourLetterArray = yourName.split('');
+
+console.log(yourLetterArray);
+
+// spread
+
+const ourName = 'John Smith';
+
+// let ourletterArray = ourName.split('');
+
+ourletterArray = [...ourName];
+
+console.log(ourletterArray);
