@@ -31,9 +31,10 @@ console.log(shortWay);
 // numbers sorting from small to large/ large to small order
 
 const numberSort = numbers.sort(function(a, b)  {
-    return a - b;
+    //return a - b;
+    return b - a;
 });
-//const numberSort = numbers.sort((a, b) => a- b);
+//const numberSort = numbers.sort((a, b) => a - b);
 console.log(numberSort);
 
 
