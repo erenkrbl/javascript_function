@@ -30,12 +30,12 @@ console.log(shortWay);
 
 // numbers sorting from small to large/ large to small order
 
-const numberSort = numbers.sort(function(a, b)  {
-    //return a - b;
-    return b - a;
-});
-//const numberSort = numbers.sort((a, b) => a - b);
-console.log(numberSort);
+// const numberSort = numbers.sort(function(a, b)  {
+//     //return a - b;
+//     return b - a;
+// });
+// //const numberSort = numbers.sort((a, b) => a - b);
+// console.log(numberSort);
 
 // object order
 
@@ -47,4 +47,19 @@ console.log(numberSort);
 // console.log(students);
 
 // order by age
-students.sort((a, b) => a.age - b.age);
+// students.sort((a, b) => a.age - b.age);
+// console.log(students);
+
+// order by name
+
+students.sort(function(a, b) {
+    if (a.name > b.age) {
+        return 1;
+    } else if (a.name < b.name) {
+        return -1;
+    } else {
+        return 0;
+    }
+});
+
+console.log(students);
