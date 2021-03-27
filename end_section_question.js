@@ -74,10 +74,22 @@ const studentsName = evenStudentsFind.map(function(student) {
     return student.firstName + " " + student.lastName;
 });
 
+//studentsName.sort().reverse();
 
-console.log(evenStudentsFind);
-console.log(studentsName);
+const orderStudents = studentsName.sort(function(a, b){
+    if (a > b) {
+        return -1;
+    } else if (a < b) {
+        return 1;
+    } else {
+        return 0;
+    }
+});
 
+
+//console.log(evenStudentsFind);
+//console.log(studentsName);
+console.log(orderStudents);
 
 
 
