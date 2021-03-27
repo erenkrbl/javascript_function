@@ -94,9 +94,9 @@ console.log(orderStudents);
 
 // with arrow function
 
-const evenStudentsFind = students.filter(student => student.id % 2 === 0);
-const studentsName = evenStudentsFind.map(student => student.firstName + " " + student.lastName);
-studentsName.sort().reverse();
+// const evenStudentsFind = students.filter(student => student.id % 2 === 0);
+// const studentsName = evenStudentsFind.map(student => student.firstName + " " + student.lastName);
+// studentsName.sort().reverse();
 
 // const orderStudents = studentsName.sort((a, b) => {
 //     if (a > b) {
@@ -110,8 +110,16 @@ studentsName.sort().reverse();
 
 
 //console.log(evenStudentsFind);
-console.log(studentsName);
+//console.log(studentsName);
 //console.log(orderStudents);
+
+const evenStudentsFind = students.filter(student => student.id % 2 === 0)
+    .map(student =>  student.firstName + " " + student.lastName)
+    .sort()
+    .reverse();
+
+console.log(evenStudentsFind);
+
 
 
 
