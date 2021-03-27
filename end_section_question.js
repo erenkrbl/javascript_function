@@ -65,7 +65,7 @@ const students = [
     {id : 44, firstName : 'Camala', lastName : 'Sue'},
 ];
 
-
+/*
 const evenStudentsFind = students.filter(function(student) {
     return student.id % 2 === 0;
 });
@@ -90,8 +90,28 @@ const orderStudents = studentsName.sort(function(a, b){
 //console.log(evenStudentsFind);
 //console.log(studentsName);
 console.log(orderStudents);
+*/
+
+// with arrow function
+
+const evenStudentsFind = students.filter(student => student.id % 2 === 0);
+const studentsName = evenStudentsFind.map(student => student.firstName + " " + student.lastName);
+studentsName.sort().reverse();
+
+// const orderStudents = studentsName.sort((a, b) => {
+//     if (a > b) {
+//         return -1;
+//     } else if (a < b) {
+//         return 1;
+//     } else {
+//         return 0;
+//     }
+// });
 
 
+//console.log(evenStudentsFind);
+console.log(studentsName);
+//console.log(orderStudents);
 
 
 
