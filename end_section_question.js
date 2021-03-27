@@ -70,8 +70,14 @@ const evenStudentsFind = students.filter(function(student) {
     return student.id % 2 === 0;
 });
 
+const studentsName = evenStudentsFind.map(function(student) {
+    return student.firstName + " " + student.lastName;
+});
+
 
 console.log(evenStudentsFind);
+console.log(studentsName);
+
 
 
 
