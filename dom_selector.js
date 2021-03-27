@@ -63,3 +63,24 @@ array.reverse();
 array.forEach(item => {
     console.log(item);
 });
+
+const listElements = document.getElementsByTagName('h2');
+console.log(listElements);
+
+//const linksList = document.querySelectorAll('a');
+const linksList = document.querySelectorAll('.link');
+console.log(linksList);
+
+const oddCities = document.querySelectorAll('li:nth-child(odd');
+const evenCities = document.querySelectorAll('li:nth-child(even');
+
+oddCities.forEach(item =>{
+    item.style.backgroundColor = "#ccc";
+});
+
+for (i = 0; i < evenCities.length; i++) {
+    evenCities[i].style.backgroundColor = "red";
+}
+
+
+
