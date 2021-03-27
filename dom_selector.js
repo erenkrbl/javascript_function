@@ -1,3 +1,4 @@
+/*
 // single dom selector
 
 console.log(document.getElementById('head'));
@@ -41,3 +42,24 @@ document.querySelector('li:nth-child(2)').style.color = 'orange';
 document.querySelector('li:nth-child(3)').style.color = 'purple';
 document.querySelector('li:nth-child(even)').style.color = 'yellow';
 document.querySelector('li:nth-child(odd)').style.color = 'gray';
+*/
+
+// multiple selector
+
+const links = document.getElementsByClassName('link');
+console.log(links[0]);
+console.log(links[2]);
+
+links[0].style.color = 'red';
+links[1].style.background = 'pink';
+links[1].textContent = 'FACEBOOK';
+
+console.log(document.querySelector('ul').getElementsByClassName('liste-item'));
+
+const array = Array.from(links);
+
+array.reverse();
+
+array.forEach(item => {
+    console.log(item);
+});
