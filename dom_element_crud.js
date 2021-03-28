@@ -10,3 +10,16 @@ newListElement.setAttribute('value', 'newValue');
 
 document.querySelector('ul').appendChild(newListElement);
 console.log(newListElement);
+
+// replace
+
+const newSmallHead = document.createElement('h6');
+newSmallHead.id = 'h6Id';
+newSmallHead.textContent = 'New Head';
+
+const oldHead = document.querySelector('h2');
+const headParent = document.querySelector('body');
+
+headParent.replaceChild(newSmallHead, oldHead);
+
+console.log(newSmallHead);
