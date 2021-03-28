@@ -22,4 +22,17 @@ const headParent = document.querySelector('body');
 
 headParent.replaceChild(newSmallHead, oldHead);
 
-console.log(newSmallHead);
+// remove
+
+const listItem = document.querySelector('li');
+listItem.remove();
+// document.querySelector('ul').remove();
+
+document.querySelector('ul').removeChild(document.querySelectorAll('li')[3]);
+
+//document.querySelector('form').removeChild(document.querySelector('input'));
+
+const textSection =  document.querySelector('input');
+document.querySelector('form').removeChild(textSection);
+
+console.log(listItem);
