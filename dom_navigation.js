@@ -16,6 +16,18 @@ value = myList.lastElementChild;
 
 value = myList.childElementCount;
 
+// parent element
+
+value = myList.parentNode;
+value = myList.parentElement.parentElement;
+
+const myInput = document.querySelector('input');
+console.log(myInput.parentElement);
+
+// neighbor element
+
+value = document.querySelector('li').nextElementSibling.nextElementSibling.previousElementSibling;
+
 
 
 console.log(value);
