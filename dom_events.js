@@ -35,12 +35,17 @@ function backgraoundChange(e) {
 
 const myForm = document.querySelector('#form');
 const yourName = document.querySelector('#name');
+yourName.addEventListener('keydown', catchEvent);
+yourName.addEventListener('keyup', catchEvent);
+yourName.addEventListener('keypress', catchEvent);
 
-myForm.addEventListener('submit', catchEvent);
+//myForm.addEventListener('submit', catchEvent);
 
 function catchEvent (e) {
-    console.log(yourName.value);
-    document.querySelector('.link').textContent = yourName.value;
+    // console.log(yourName.value);
+    // document.querySelector('.link').textContent = yourName.value;
+
+
     console.log('Event name: ' + e.type);
     e.preventDefault();
 }
