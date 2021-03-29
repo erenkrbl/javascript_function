@@ -35,6 +35,8 @@ function backgraoundChange(e) {
 
 const myForm = document.querySelector('#form');
 const yourName = document.querySelector('#name');
+const cities = document.querySelector('#city');
+
 //yourName.addEventListener('keydown', catchEvent);
 //yourName.addEventListener('keyup', catchEvent);
 //yourName.addEventListener('keypress', catchEvent);
@@ -46,6 +48,7 @@ const yourName = document.querySelector('#name');
 // yourName.addEventListener('paste', catchEvent);
 
 yourName.addEventListener('input', catchEvent);
+cities.addEventListener('change', catchEvent);
 
 //myForm.addEventListener('submit', catchEvent);
 
