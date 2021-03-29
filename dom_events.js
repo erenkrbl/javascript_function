@@ -42,15 +42,18 @@ const yourName = document.querySelector('#name');
 // yourName.addEventListener('focus', catchEvent);
 // yourName.addEventListener('blur', catchEvent);
 
-yourName.addEventListener('cut', catchEvent);
-yourName.addEventListener('paste', catchEvent);
+// yourName.addEventListener('cut', catchEvent);
+// yourName.addEventListener('paste', catchEvent);
 
+yourName.addEventListener('input', catchEvent);
 
 //myForm.addEventListener('submit', catchEvent);
 
 function catchEvent (e) {
     // console.log(yourName.value);
     // document.querySelector('.link').textContent = yourName.value;
+    //console.log(yourName.value);
+    console.log(e.target.value);
 
 
     console.log('Event name: ' + e.type);
