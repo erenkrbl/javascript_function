@@ -35,9 +35,12 @@ function backgraoundChange(e) {
 
 const myForm = document.querySelector('#form');
 const yourName = document.querySelector('#name');
-yourName.addEventListener('keydown', catchEvent);
-yourName.addEventListener('keyup', catchEvent);
-yourName.addEventListener('keypress', catchEvent);
+//yourName.addEventListener('keydown', catchEvent);
+//yourName.addEventListener('keyup', catchEvent);
+//yourName.addEventListener('keypress', catchEvent);
+
+yourName.addEventListener('focus', catchEvent);
+yourName.addEventListener('blur', catchEvent);
 
 //myForm.addEventListener('submit', catchEvent);
 
