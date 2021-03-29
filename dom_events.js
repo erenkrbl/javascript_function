@@ -13,7 +13,7 @@ document.querySelector('.container').addEventListener('mouseout', myClick);
 
 
 
-*/
+
 
 function myClick (e) {
     let value;
@@ -30,6 +30,22 @@ function backgraoundChange(e) {
     document.querySelector('.article').textContent = `R: ${e.clientX % 255} G: ${e.clientY % 255} B: ${(e.clientX + e.clientY) % 255}`;
     document.querySelector('.container').style.backgroundColor = `rgb(${e.clientX % 255}, ${e.clientY % 255}, ${(e.clientX + e.clientY) % 255})`;
 }
+*/
+// form and keyboard event 
+
+const myForm = document.querySelector('#form');
+const yourName = document.querySelector('#name');
+
+myForm.addEventListener('submit', catchEvent);
+
+function catchEvent (e) {
+    console.log(yourName.value);
+    document.querySelector('.link').textContent = yourName.value;
+    console.log('Event name: ' + e.type);
+    e.preventDefault();
+}
+
+
 
 
 
