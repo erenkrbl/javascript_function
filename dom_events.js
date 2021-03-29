@@ -39,8 +39,12 @@ const yourName = document.querySelector('#name');
 //yourName.addEventListener('keyup', catchEvent);
 //yourName.addEventListener('keypress', catchEvent);
 
-yourName.addEventListener('focus', catchEvent);
-yourName.addEventListener('blur', catchEvent);
+// yourName.addEventListener('focus', catchEvent);
+// yourName.addEventListener('blur', catchEvent);
+
+yourName.addEventListener('cut', catchEvent);
+yourName.addEventListener('paste', catchEvent);
+
 
 //myForm.addEventListener('submit', catchEvent);
 
