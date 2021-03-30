@@ -73,8 +73,18 @@ function catchEvent (e) {
 //     console.log('child');
 // });
 
-document.querySelector('.item').addEventListener('click', e => {
-    console.log('itemmmm');
+// document.querySelector('.item').addEventListener('click', e => {
+//     console.log('itemmmm');
+// });
+
+document.querySelector('.parent').addEventListener('click', e => {
+if (e.target.classList.contains ('item')) {
+    console.log('Hello, Click Meeee!')
+}
+
+    // if (e.target.className == 'item child-item') {
+    //     console.log('Hello, Clickme');
+    // }
 });
 
 
