@@ -12,6 +12,15 @@ localStorage.removeItem('name');
 
 localStorage.clear();
 */
+const ulList = document.querySelector('.list');
+const nameArray = JSON.parse(localStorage.getItem('nameList'));
+
+nameArray.forEach(function (name) {
+    const newList = document.createElement('li');
+    newList.textContent = name;
+    ulList.appendChild(newList);
+});
+
 
 document.querySelector('#form').addEventListener('submit', function (e) {
     const newName = document.querySelector('.name').value;
@@ -26,6 +35,9 @@ document.querySelector('#form').addEventListener('submit', function (e) {
     nameArray.push(newName);
 
     localStorage.setItem('nameList', JSON.stringify(nameArray));
+    const newList = document.createElement('li');
+    newList.textContent = newName;
+    ulList.appendChild(newList);
 
     e.preventDefault();
 })
