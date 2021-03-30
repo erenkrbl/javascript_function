@@ -63,6 +63,20 @@ function catchEvent (e) {
     e.preventDefault();
 }
 
+// event bubbling and delegation
+
+// document.querySelector('.parent').addEventListener('click', e => {
+//     console.log('parent');
+// });
+
+// document.querySelector('.child').addEventListener('click', e => {
+//     console.log('child');
+// });
+
+document.querySelector('.item').addEventListener('click', e => {
+    console.log('itemmmm');
+});
+
 
 
 
