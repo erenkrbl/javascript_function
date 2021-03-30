@@ -15,11 +15,14 @@ localStorage.clear();
 const ulList = document.querySelector('.list');
 const nameArray = JSON.parse(localStorage.getItem('nameList'));
 
-nameArray.forEach(function (name) {
-    const newList = document.createElement('li');
-    newList.textContent = name;
-    ulList.appendChild(newList);
-});
+if (nameArray != null) {
+    nameArray.forEach(function (name) {
+        const newList = document.createElement('li');
+        newList.textContent = name;
+        ulList.appendChild(newList);
+    });
+}
+
 
 
 document.querySelector('#form').addEventListener('submit', function (e) {
