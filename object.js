@@ -56,8 +56,13 @@ function createStudent(firstName, age, gender, scholl) {
         age : age,
         gender : gender,
         scholl : scholl,
+
+        // method
+        showInformation : function (){
+            return `My name is ${this.firstName}, my age ${this.age}, my school is ${this.scholl}`
+        }
     }
 }
 
-console.log(eric);
-console.log(henry);
+console.log(eric.showInformation());
+console.log(henry.showInformation());
