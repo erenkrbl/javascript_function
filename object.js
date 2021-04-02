@@ -1,7 +1,7 @@
 // What is an object
 
 // object literal
-
+/*
 const eric = {
     firstName: 'Eric',
     lastName: 'Oliver',
@@ -43,3 +43,21 @@ const henry = {
 
     ['full-name']: 'Henry Forester',
 }
+*/
+
+const eric = createStudent('Eric', 36, true, 'Marmara');
+const henry = createStudent('Henry', 38, false, 'Ege');
+
+// factory function
+
+function createStudent(firstName, age, gender, scholl) {
+    return {
+        firstName : firstName,
+        age : age,
+        gender : gender,
+        scholl : scholl,
+    }
+}
+
+console.log(eric);
+console.log(henry);
