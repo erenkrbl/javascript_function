@@ -89,7 +89,29 @@ function Student(firstName, age, gender, scholl) {
 // Third :Links this word to the current object
 
 const joseph = new Student('Joseph', 40, 'true', 'İTÜ');
-console.log(joseph);
+console.log(joseph.constructor);
 
-const john = new Student('John', 41, 'true', 'İstanbul');
-console.log(john);
+const newJoseph  = new joseph.constructor('NewJoseph', 41, false, 'Muğla');
+console.log(newJoseph);
+
+// const john = new Student('John', 41, 'true', 'İstanbul');
+// console.log(john);
+
+// Js deki tüm objeler onu oluşturan constructor fonksiyonuna ulaşabilir.
+// All objects in Js can access the constructor function that created it.
+// Js ile beraber gelen built in constructor functionlar vardır.
+// There are built in constructor functions that come with Js
+// Diziler ve fonksiyonlar aslında objectir, ispat
+// Arrays and functions are actually objecs, proof
+
+const tryObject = {};
+console.log(tryObject.constructor);
+console.log(tryObject.constructor());
+
+const tryArray = [];
+console.log(tryArray.constructor);
+console.log(tryArray.constructor());
+
+const tryFunc = function () { };
+console.log(tryFunc.constructor);
+console.log(tryFunc.constructor());
