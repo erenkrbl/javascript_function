@@ -72,27 +72,27 @@ function createStudent(firstName, age, gender, scholl) {
 
 // constuctor functions
 
-function Student(firstName, age, gender, scholl) {
-    this.firstName = firstName;
-    this.age = age;
-    this.gender = gender;
-    this.scholl = scholl;
-    this.showInformation = function () {
-        return `My name is ${this.firstName}, my age ${this.age}, my school is ${this.scholl}`
-    }
+// function Student(firstName, age, gender, scholl) {
+//     this.firstName = firstName;
+//     this.age = age;
+//     this.gender = gender;
+//     this.scholl = scholl;
+//     this.showInformation = function () {
+//         return `My name is ${this.firstName}, my age ${this.age}, my school is ${this.scholl}`
+//     }
 
-}
+// }
 
 // New : Three thinging changing with use new
 // First : A new object is created
 // Second : We don't have to write return
 // Third :Links this word to the current object
 
-const joseph = new Student('Joseph', 40, 'true', 'İTÜ');
-console.log(joseph.constructor);
+// const joseph = new Student('Joseph', 40, 'true', 'İTÜ');
+// console.log(joseph.constructor);
 
-const newJoseph  = new joseph.constructor('NewJoseph', 41, false, 'Muğla');
-console.log(newJoseph);
+// const newJoseph  = new joseph.constructor('NewJoseph', 41, false, 'Muğla');
+// console.log(newJoseph);
 
 // const john = new Student('John', 41, 'true', 'İstanbul');
 // console.log(john);
@@ -104,14 +104,43 @@ console.log(newJoseph);
 // Diziler ve fonksiyonlar aslında objectir, ispat
 // Arrays and functions are actually objecs, proof
 
-const tryObject = {};
-console.log(tryObject.constructor);
-console.log(tryObject.constructor());
+// const tryObject = {};
+// console.log(tryObject.constructor);
+// console.log(tryObject.constructor());
 
-const tryArray = [];
-console.log(tryArray.constructor);
-console.log(tryArray.constructor());
+// const tryArray = [];
+// console.log(tryArray.constructor);
+// console.log(tryArray.constructor());
 
-const tryFunc = function () { };
-console.log(tryFunc.constructor);
-console.log(tryFunc.constructor());
+// const tryFunc = function () { };
+// console.log(tryFunc.constructor);
+// console.log(tryFunc.constructor());
+
+
+// prototype Property
+// JS prototype miras modelini kullanır
+// Her constructor function/class aynı kurucu fonksiyonla oluşturulan 
+// instance'ların ortak olaarak kullanabilecekleri prototype isimli property sahiptir
+// Prototype property de bir nesne döndürür
+
+
+Student.prototype.scholl = 'İTÜ';
+Student.prototype.showInformation = function () {
+    return `My name is ${this.firstName}, my age ${this.age}, my school is ${this.scholl}`
+};
+
+function Student(firstName, age, gender, scholl) {
+    this.firstName = firstName;
+    this.age = age;
+    this.gender = gender;
+}
+
+const joseph = new Student('Joseph', 40, 'true', 'İTÜ');
+console.log(joseph.scholl);
+
+const oliver  = new Student('oliver', 36, false, 'İTÜ');
+console.log(oliver.showInformation());
+
+console.log(joseph);
+console.log(joseph.constructor.prototype);
+console.log(Object.getPrototypeOf(oliver));
