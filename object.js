@@ -64,5 +64,32 @@ function createStudent(firstName, age, gender, scholl) {
     }
 }
 
-console.log(eric.showInformation());
-console.log(henry.showInformation());
+// console.log(eric.showInformation());
+// console.log(henry.showInformation());
+// console.log(eric);
+// console.log(henry);
+
+
+// constuctor functions
+
+function Student(firstName, age, gender, scholl) {
+    this.firstName = firstName;
+    this.age = age;
+    this.gender = gender;
+    this.scholl = scholl;
+    this.showInformation = function () {
+        return `My name is ${this.firstName}, my age ${this.age}, my school is ${this.scholl}`
+    }
+
+}
+
+// New : Three thinging changing with use new
+// First : A new object is created
+// Second : We don't have to write return
+// Third :Links this word to the current object
+
+const joseph = new Student('Joseph', 40, 'true', 'İTÜ');
+console.log(joseph);
+
+const john = new Student('John', 41, 'true', 'İstanbul');
+console.log(john);
