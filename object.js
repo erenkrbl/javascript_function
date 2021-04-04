@@ -144,3 +144,36 @@ console.log(oliver.showInformation());
 console.log(joseph);
 console.log(joseph.constructor.prototype);
 console.log(Object.getPrototypeOf(oliver));
+
+const firstArray = [1, 2, 3, 4, 5];
+const secondArray = [11, 22, 33, 44];
+
+console.log(firstArray.constructor.prototype);
+firstArray.push(1);
+
+const fName = 'Kerry';
+console.log(typeof fName);
+console.log(fName instanceof Object);
+
+console.log(fName.toUpperCase());
+console.log(fName instanceof Object);
+
+console.log(fName.constructor.prototype);
+console.log(fName.charAt(0));
+
+const colors = new String('red');
+console.log(typeof colors);
+
+const number = 5;
+console.log(typeof number);
+number.say = 6;          // we cannot assign as it is not an object
+console.log(number.say); // object olmadığı için atama yapamıyoruz
+                         
+
+const birtDay = new Number(1988);
+console.log(typeof birtDay);
+birtDay.test = 'Athousendninehundred'; // we can assign as it is an object
+console.log(birtDay.test);             // Object olduğu için atama yapabiliriz
+
+const cities = new Array('Atina', 'Beyrut', 'Newyork');
+console.log(cities);
