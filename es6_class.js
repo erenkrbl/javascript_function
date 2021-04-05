@@ -5,9 +5,13 @@
 //(prototype-based) and functional programing styles. 
 
 class Person {
+
+    static count = 0;
+
     constructor(fName, LName) {
         this.fName = fName;
         this.LName = LName;
+        Person.count++;
     }
     sayHello(){
         return `Hello I'm ${this.fName + " " + this.LName}`
@@ -39,3 +43,4 @@ console.log(henry.sayHello());
 const sue = new Student('Sue', 'Scott', 23);
 console.log(sue.sayAge());
 console.log(sue.sayHello());
+console.log('Created person count : ' + Person.count)
