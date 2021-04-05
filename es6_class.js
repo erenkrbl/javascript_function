@@ -10,8 +10,17 @@ class Person {
 
     constructor(fName, LName) {
         this.fName = fName;
-        this.LName = LName;
+        this._LName = LName;
         Person.count++;
+    }
+
+    get LNameGet() {
+        return this._LName;
+    }
+
+    set LNameSet(newValue) {
+        this._LName = newValue;
+
     }
     sayHello(){
         return `Hello I'm ${this.fName + " " + this.LName}`
@@ -38,6 +47,7 @@ class Student extends Person{
 }
 
 const eric = new Person('Eric', 'Apple');
+eric.LNameSet = 'Orange';
 console.log(eric.sayHello());
 
 const henry = new Person('Henry', 'Forester');
@@ -49,3 +59,4 @@ console.log(sue.sayHello());
 console.log('Created person count : ' + Person.count);
 
 Person.test();
+console.log(eric.LNameGet);
