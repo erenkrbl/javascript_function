@@ -16,6 +16,9 @@ class Person {
     sayHello(){
         return `Hello I'm ${this.fName + " " + this.LName}`
     }
+    static test () {
+        console.log('I am static method');
+    }
 
 }
 
@@ -43,4 +46,6 @@ console.log(henry.sayHello());
 const sue = new Student('Sue', 'Scott', 23);
 console.log(sue.sayAge());
 console.log(sue.sayHello());
-console.log('Created person count : ' + Person.count)
+console.log('Created person count : ' + Person.count);
+
+Person.test();
