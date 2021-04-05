@@ -27,3 +27,21 @@ console.log(t1, t2, t3, t4);
 
 
 // Object destructuring
+
+let setting = {
+    head : 'JS Wonderfull',
+    height : '300px',
+    width : '200px',
+};
+
+// first
+// const head = setting.head;
+// console.log(head, setting.height);
+
+//second
+// const {head, height, width} = setting;
+// console.log(head, height, width);
+
+// Third
+const {head:h, height:y, width:w} = setting;
+console.log(h, y, w);
