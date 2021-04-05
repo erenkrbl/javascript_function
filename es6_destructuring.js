@@ -59,3 +59,35 @@ let setting = {
 const {head:h='Default Head', height:y, width:w} = setting;
 
 console.log(h, y, w);
+
+
+const country = 'Germany';
+const city = 'Berlin';
+
+const countryCityFirst = {
+    country : country,
+    city : city,
+}
+
+console.log(countryCityFirst);
+
+// ES6
+const countryCitySecond = {country, city};
+console.log(countryCitySecond);
+
+
+// spread operator
+
+const person = {
+    fNames : 'john',
+    lastName : 'Smith',
+    age : 37,
+    country : 'England',
+    city : 'Lyon',
+
+};
+
+const {age, ...otherValue} = person;
+
+console.log(age, otherValue);
+
