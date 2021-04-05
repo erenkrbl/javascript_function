@@ -1,13 +1,13 @@
 // Array destructuring
-let myName = ['Eric', 'oliver']
+// let myName = ['Eric', 'oliver']
 
-const firstName = myName[0];
-const lastName = myName[1];
+// const firstName = myName[0];
+// const lastName = myName[1];
 
-console.log(firstName, lastName);
+// console.log(firstName, lastName);
 
-const [first, last] = myName;
-console.log(first, last);
+// const [first, last] = myName;
+// console.log(first, last);
 
 const colors = ['red', 'yellow', 'blue', 'black', 'purple', 'pink'];
 
@@ -78,16 +78,43 @@ console.log(countryCitySecond);
 
 // spread operator
 
-const person = {
-    fNames : 'john',
-    lastName : 'Smith',
-    age : 37,
-    country : 'England',
-    city : 'Lyon',
+// const person = {
+//     fNames : 'john',
+//     lastName : 'Smith',
+//     age : 37,
+//     country : 'England',
+//     city : 'Lyon',
 
+// };
+
+// const {age, ...otherValue} = person;
+
+// console.log(age, otherValue);
+
+const people = {
+    fullName : {
+        firstName : 'Jake',
+        lastName : 'Taylor',
+    },
+    favoriteColor : ['Green', 'white', 'Black'],
+    age : 40
 };
 
-const {age, ...otherValue} = person;
+const {fullName : {firstName, lastName}, favoriteColor : [co1, co2, co3], age} = people;
 
-console.log(age, otherValue);
+console.log(firstName, lastName, co1, co2, co3, age);
+
+
+
+// console.log(people.fullName.firstName);
+
+// const {fullName : {firstName, lastName}} = people;
+
+// console.log(firstName + ' ' + lastName);
+
+// console.log(people.favoriteColor[0]);
+
+// const { favoriteColor } = people;
+// //const favoriteColor = people.favoriteColor; // both the same
+// console.log(favoriteColor);
 
