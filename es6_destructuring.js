@@ -27,7 +27,7 @@ console.log(t1, t2, t3, t4);
 
 
 // Object destructuring
-
+/*
 let setting = {
     head : 'JS Wonderfull',
     height : '300px',
@@ -44,4 +44,18 @@ let setting = {
 
 // Third
 const {head:h, height:y, width:w} = setting;
+console.log(h, y, w);
+
+*/
+
+// default value assignment
+
+let setting = {
+    //head : 'JS Wonderfull',
+    height : '300px',
+    width : '200px',
+};
+
+const {head:h='Default Head', height:y, width:w} = setting;
+
 console.log(h, y, w);
