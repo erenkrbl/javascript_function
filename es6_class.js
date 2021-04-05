@@ -15,8 +15,27 @@ class Person {
 
 }
 
+// inherit
+
+class Student extends Person{
+    constructor(fName, LName, age) {
+        super(fName, LName, age);
+        this.age = age;
+    }
+    sayAge() {
+        return `I'm ${this.age} year old.`;
+    }
+    sayHello(){
+        return `Hello I'm ${this.fName + " " + this.LName + ' and I am ' + this.age + ' years old.' }`
+    }
+}
+
 const eric = new Person('Eric', 'Apple');
 console.log(eric.sayHello());
 
 const henry = new Person('Henry', 'Forester');
 console.log(henry.sayHello());
+
+const sue = new Student('Sue', 'Scott', 23);
+console.log(sue.sayAge());
+console.log(sue.sayHello());
