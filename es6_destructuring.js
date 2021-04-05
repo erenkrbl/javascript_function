@@ -19,5 +19,11 @@ const [r1, r2, ...otherColor] = colors;
 
 console.log(r1, r2, otherColor);
 
+// default value assignment
+
+const [t1, t2, t3='unkonwn', t4 ='undefined'] = ['Juvestus', 'Milan', 'Real Madrid'];
+
+console.log(t1, t2, t3, t4);
+
 
 // Object destructuring
