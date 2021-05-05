@@ -58,3 +58,19 @@ const sumNumber3 = function (num1, num2) {
     return num1 * num2;
 }
 console.log(sumNumber3(4, 7));
+
+const myArrowFunction = (p1) => {
+    console.log("My arrow function " + p1)
+}
+myArrowFunction("Best");
+
+const mySquare = n1 => n1 * n1;
+console.log(mySquare(6));
+
+const myMultiplication_1 = (n1, n2) => n1 * n2;
+const myMultiplication_2 = (n1, n2) => {
+    return n1 * n2;
+} 
+
+console.log(myMultiplication_1(6, 7));
+console.log(myMultiplication_2(6, 8));
