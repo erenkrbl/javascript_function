@@ -64,3 +64,13 @@ function sumNumbers(...parameters) {
 sumNumbers(4, 5);
 sumNumbers(4, 5, 9, 7);
 sumNumbers(4, 5, 20, 47);
+
+
+let myArray = [2, 23, 16, 55, 9, 123];
+
+function sortElement(a, b){
+    return a- b;
+}
+
+const numOrder = myArray.sort(sortElement);
+console.log(numOrder);
