@@ -74,3 +74,17 @@ const myMultiplication_2 = (n1, n2) => {
 
 console.log(myMultiplication_1(6, 7));
 console.log(myMultiplication_2(6, 8));
+
+//IIFE (Immediately Invocable Function Expressions )
+
+(function(){
+    console.log("IIFE");
+})();
+
+(function(p1, p2){
+    console.log("IIFE ", p1, p2)
+})("Abc", 2);
+
+((p1, p2)=>{
+    console.log("IIFE ", p1, p2)
+})("AQWE", 5);
