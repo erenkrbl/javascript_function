@@ -95,3 +95,21 @@ function checkNumbers(){
 
 }
 checkNumbers();
+
+// Regular Function
+
+
+function myRegularFunction(p1){
+    //console.log(arguments);
+    console.log("My regular function " + p1);
+}
+
+myRegularFunction("Clarus");
+
+// Function Expression
+
+const myExpressionFunction = function(p2){
+    console.log("My expression function " + p2);
+}
+
+myExpressionFunction("way");
