@@ -87,6 +87,21 @@ if (e.target.classList.contains ('item')) {
     // }
 });
 
+document.getElementById("btn").addEventListener("click", sumNumber);
+
+function sumNumber(){
+    const number_1 = document.getElementById('inp_1').value;
+    const number_2 = document.getElementById('inp_2').value;
+
+    if(isNaN(number_1) || isNaN(number_2))
+    return alert("Not a number")
+    const result = parseInt(number_1) + parseInt(number_2)
+
+    document.getElementById("res").innerHTML = result;
+}
+
+
+
 
 
 
