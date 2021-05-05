@@ -97,14 +97,15 @@ function checkNumbers(){
 checkNumbers();
 
 // Regular Function
-
+myRegularFunction("Heyy");
+myExpressionFunction("Come");
 
 function myRegularFunction(p1){
     //console.log(arguments);
     console.log("My regular function " + p1);
 }
 
-myRegularFunction("Clarus");
+myRegularFunction("Clarus"); // Hoisting
 
 // Function Expression
 
