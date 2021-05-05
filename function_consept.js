@@ -58,3 +58,40 @@ function numberAddition (firstNumber, secondNumber) {
     return firstNumber + secondNumber;
     
 }
+
+const myfirstNumber = 14;
+const mysecondNumber = 19;
+
+function myFunction(){
+    const result = myfirstNumber + mysecondNumber;
+    return result;
+
+}
+
+const mySum = myFunction();
+console.log(mySum);
+
+let myString_1 = 'Hello';
+let myString_2= 'World';
+
+function upperWords(w1, w2) {
+    const w_1 = w1.toUpperCase();
+    const w_2 = w2.toUpperCase();
+    return w_1 + " " + w_2;
+}
+
+const res = upperWords(myString_1, myString_2);
+
+console.log(res);
+
+function checkNumbers(){
+    for(let i = 0; 1 < 10; i++){
+        if(i ===5)
+        return;
+        //break;
+        console.log("i: ", i);
+    }
+    console.log("End")
+
+}
+checkNumbers();
