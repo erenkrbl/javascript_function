@@ -44,6 +44,25 @@ function listUser(){
 //console.log(elements);
 
 // TAG
-const elements = document.getElementsByTagName('p');
+// const elements = document.getElementsByTagName('p');
+// console.log(elements);
+
+// document.querySelector
+
+//ID
+
+const element = document.querySelector('#user_name');
+console.log(element);
+
+// CLASS
+
+// const elements = document.querySelectorAll('.user_tag');
+// console.log(elements);
+
+// TAG
+
+const elements = document.querySelectorAll('p');
 console.log(elements);
+
+
 
