@@ -151,6 +151,9 @@ class User {
         this.userAge = param.age,
         this.userCity = param.city
     }
+    login(){
+        console.log(this.userName + " logged in!")
+    }
 }
 
 const myUser_1 = new User(
@@ -162,13 +165,17 @@ const myUser_1 = new User(
     }
 );
 
-// const myUser_2 = new User(
-//     {
-//         name: "Thomas", 
-//         password: "XCY4", 
-//         age: 35
-//     }
-// );
+const myUser_2 = new User(
+    {
+        name: "Thomas", 
+        password: "XCY4", 
+        age: 35,
+        city: "Bilecik"
+    }
+);
 
 console.log(myUser_1);
-//console.log(myUser_2);
+console.log(myUser_2);
+
+myUser_1.login();
+myUser_2.login();
