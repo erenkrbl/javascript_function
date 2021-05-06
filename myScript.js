@@ -51,8 +51,8 @@ function listUser(){
 
 //ID
 
-const element = document.querySelector('#user_name');
-console.log(element);
+// const element = document.querySelector('#user_name');
+// console.log(element);
 
 // CLASS
 
@@ -61,8 +61,23 @@ console.log(element);
 
 // TAG
 
-const elements = document.querySelectorAll('p');
-console.log(elements);
+// const elements = document.querySelectorAll('p');
+// console.log(elements);
+
+const list = document.querySelector('#city_list');
+
+
+const elements_1 = document.getElementsByClassName('city');
+const elements_2 = document.querySelectorAll('.city');
+
+console.log(elements_1);
+console.log(elements_2);
+
+list.innerHTML += '<li class="city">Bursa</li>';
+
+console.log(elements_1);
+console.log(elements_2);
+
 
 
 
