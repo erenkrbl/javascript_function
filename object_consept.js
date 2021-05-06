@@ -42,3 +42,17 @@ kamala.FirstNames = "Kamala";
 kamala.lastName = "Susan";
 
 console.log(kamala);
+
+const user = {
+    userName: 'Elvin',
+    userSurname: 'Clark',
+    age: 29,
+    isMember: true,
+    changeNickName(nick) {
+        console.log("Setting nickname: " + nick)
+    }
+}
+
+console.log(user.userName);
+console.log(user["userSurname"]);
+user.changeNickName("Eric");
