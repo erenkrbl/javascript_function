@@ -1,3 +1,4 @@
+/*
 document.getElementById("submit_btn").addEventListener('click', submitUser);
 document.getElementById("list_btn").addEventListener('click', listUser);
 
@@ -29,3 +30,20 @@ function listUser(){
     console.log(userList)
     userList[1].login();
 }
+*/
+// DOM
+//documnet.getElement ...
+
+//ID
+// const element = document.getElementById('user_name');
+// console.log(element);
+
+//CLASS
+
+//const elements = document.getElementsByClassName('user_tag');
+//console.log(elements);
+
+// TAG
+const elements = document.getElementsByTagName('p');
+console.log(elements);
+
