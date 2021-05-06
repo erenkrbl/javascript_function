@@ -73,3 +73,39 @@ const myNewArray = myArray.mySelfMap(function(number) {
 
 console.log(newArray);
 console.log(myNewArray);
+
+const user = {
+    userName: '',
+    userPass: '',
+    age:'',
+    changeNickName(nick) {
+        console.log("Setting nickname: " + nick)
+    }
+}
+
+console.log(user.userName);
+console.log(user["userSurname"]);
+user.changeNickName("Eric");
+
+
+const userArray = [];
+
+const myUser_1 = user;
+myUser_1.userName = "Ayşe";
+myUser_1.userPass = "123",
+myUser_1.age = 19;
+
+console.log(myUser_1);
+
+const myUser_2 = user;
+myUser_2.userName = "Fatma";
+myUser_2.userPass = "345",
+myUser_2.age = 29;
+
+console.log(myUser_2);
+
+userArray.push(myUser_1);
+userArray.push(myUser_2);
+
+console.log(userArray); //Array of object
+
