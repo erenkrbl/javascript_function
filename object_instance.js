@@ -125,7 +125,7 @@ console.log(userArray); //Array of object
 //         console.log("Setting nickname: " + nick)
 //     }
 // }
-
+/*
 class User {
     constructor(name, password, age){
         this.userName = name,
@@ -139,3 +139,36 @@ const myUser_2 = new User("Thomas", "XCY4", 35);
 
 console.log(myUser_1);
 console.log(myUser_2);
+*/
+
+// turn into object
+
+class User {
+    constructor(param){
+        console.log(param)
+        this.userName = param.name,
+        this.userPassword = param.password,
+        this.userAge = param.age,
+        this.userCity = param.city
+    }
+}
+
+const myUser_1 = new User(
+    {   
+        name: "Albert",
+        password: "EMC2", 
+        age: 25,
+        city:"izmir"
+    }
+);
+
+// const myUser_2 = new User(
+//     {
+//         name: "Thomas", 
+//         password: "XCY4", 
+//         age: 35
+//     }
+// );
+
+console.log(myUser_1);
+//console.log(myUser_2);
