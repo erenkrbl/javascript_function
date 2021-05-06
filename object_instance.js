@@ -1,5 +1,5 @@
 // person constructor function
-
+/*
 function Person(fName, LName) {
     this.fName = fName;
     this.LName = LName;
@@ -37,7 +37,7 @@ console.log(oliver.sayHello());
 const kamala = new Student('Kamala', 'Sue', 17, 9);
 console.log(kamala.sayHello());
 console.log(kamala.sayAge());
-
+*/
 /*
 function MyArray () {
 
@@ -53,7 +53,7 @@ myArray.push(1, 2, 34, 'aron');
 console.log(myArray);
 
 */
-
+/*
 Array.prototype.mySelfMap = function (operation) {
     const newArray = [];
     for (i = 0; i < this.length; i++) {
@@ -73,11 +73,12 @@ const myNewArray = myArray.mySelfMap(function(number) {
 
 console.log(newArray);
 console.log(myNewArray);
-
+*/
+/*
 const user = {
     userName: '',
     userPass: '',
-    age:'',
+    age:0,
     changeNickName(nick) {
         console.log("Setting nickname: " + nick)
     }
@@ -108,4 +109,33 @@ userArray.push(myUser_1);
 userArray.push(myUser_2);
 
 console.log(userArray); //Array of object
+*/
 
+
+// Classes
+
+// const user = {
+//     userName: '',
+//     userPass: '',
+//     age:0,
+//     login(){
+//         console.log(this.userName + " logged in")
+//     },
+//     changeNickName(nick) {
+//         console.log("Setting nickname: " + nick)
+//     }
+// }
+
+class User {
+    constructor(name, password, age){
+        this.userName = name,
+        this.userPassword = password,
+        this.userAge = age
+    }
+}
+
+const myUser_1 = new User("Albert", "EMC2", 25);
+const myUser_2 = new User("Thomas", "XCY4", 35);
+
+console.log(myUser_1);
+console.log(myUser_2);
