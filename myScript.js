@@ -80,11 +80,34 @@ function listUser(){
 
 //===================================
 
-const element = document.querySelector('#my_element');
-element.innerText = 'Hello Saying';
-element.innerHTML = '<p>How are you</p>'
+// const element = document.querySelector('#my_element');
+// element.innerText = 'Hello Saying';
+// element.innerHTML = '<p>How are you</p>'
 
-console.log(element);
+// console.log(element);
+
+//examples
+
+
+car_list = [
+    {id: 0, brandName : 'Mercedes'},
+    {id: 0, brandName : 'Tesla'},
+    {id: 0, brandName : 'BMW'},
+    {id: 0, brandName : 'Porche'}
+]
+
+const listElement = document.querySelector('#cars');
+
+car_list.forEach((car) => {
+    //console.log(car)
+    listElement.innerHTML += `<li class="car_class">${car.brandName}</li>`;
+});
+//==============
+
+for(let i = 0; i < car_list.length; i++) {
+    listElement.innerHTML += `<li class="car_class">${car_list[i].brandName}</li>`;
+
+}
 
 
 
