@@ -134,10 +134,20 @@ function listUser(){
 // element.style.color = 'red';
 // element.style.fontSize = "100px";
 
-const element = document.querySelector('#my_banner');
-console.log(element.classList);
-element.classList.add("active")
-console.log(element.classList);
+// const element = document.querySelector('#my_banner');
+// console.log(element.classList);
+// element.classList.add("active")
+// console.log(element.classList);
+
+const element = document.querySelector('#today');
+console.log(element);
+
+const myElement = document.createElement('p');
+myElement.innerText = "Thursday";
+
+element.appendChild(myElement);
+
+console.log(element);
 
 
 
