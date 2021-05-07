@@ -64,19 +64,27 @@ function listUser(){
 // const elements = document.querySelectorAll('p');
 // console.log(elements);
 
-const list = document.querySelector('#city_list');
+// const list = document.querySelector('#city_list');
 
 
-const elements_1 = document.getElementsByClassName('city');
-const elements_2 = document.querySelectorAll('.city');
+// const elements_1 = document.getElementsByClassName('city');
+// const elements_2 = document.querySelectorAll('.city');
 
-console.log(elements_1);
-console.log(elements_2);
+// console.log(elements_1);
+// console.log(elements_2);
 
-list.innerHTML += '<li class="city">Bursa</li>';
+// list.innerHTML += '<li class="city">Bursa</li>';
 
-console.log(elements_1);
-console.log(elements_2);
+// console.log(elements_1);
+// console.log(elements_2);
+
+//===================================
+
+const element = document.querySelector('#my_element');
+element.innerText = 'Hello Saying';
+element.innerHTML = '<p>How are you</p>'
+
+console.log(element);
 
 
 
