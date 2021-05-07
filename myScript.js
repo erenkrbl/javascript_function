@@ -89,26 +89,35 @@ function listUser(){
 //examples
 
 
-car_list = [
-    {id: 0, brandName : 'Mercedes'},
-    {id: 0, brandName : 'Tesla'},
-    {id: 0, brandName : 'BMW'},
-    {id: 0, brandName : 'Porche'}
-]
+// car_list = [
+//     {id: 0, brandName : 'Mercedes'},
+//     {id: 0, brandName : 'Tesla'},
+//     {id: 0, brandName : 'BMW'},
+//     {id: 0, brandName : 'Porche'}
+// ]
 
-const listElement = document.querySelector('#cars');
+// const listElement = document.querySelector('#cars');
 
-car_list.forEach((car) => {
-    //console.log(car)
-    listElement.innerHTML += `<li class="car_class">${car.brandName}</li>`;
-});
-//==============
+// car_list.forEach((car) => {
+//     //console.log(car)
+//     listElement.innerHTML += `<li class="car_class">${car.brandName}</li>`;
+// });
+// //==============
 
-for(let i = 0; i < car_list.length; i++) {
-    listElement.innerHTML += `<li class="car_class">${car_list[i].brandName}</li>`;
+// for(let i = 0; i < car_list.length; i++) {
+//     listElement.innerHTML += `<li class="car_class">${car_list[i].brandName}</li>`;
+// }
 
-}
+// GET AND SET ATTRİBUTE
 
+const element = document.querySelector('#link');
+console.log(element);
+const attr = element.getAttribute('href');
+console.log(attr);
+
+element.setAttribute('href', 'http://www.clarusway.com')
+element.innerText = "Go to Clarusway";
+console.log(element);
 
 
 
