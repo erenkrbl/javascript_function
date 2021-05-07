@@ -110,14 +110,25 @@ function listUser(){
 
 // GET AND SET ATTRİBUTE
 
-const element = document.querySelector('#link');
-console.log(element);
-const attr = element.getAttribute('href');
-console.log(attr);
+// const element = document.querySelector('#link');
+// console.log(element);
+// const attr = element.getAttribute('href');
+// console.log(attr);
 
-element.setAttribute('href', 'http://www.clarusway.com')
-element.innerText = "Go to Clarusway";
-console.log(element);
+// element.setAttribute('href', 'http://www.clarusway.com')
+// element.innerText = "Go to Clarusway";
+// console.log(element);
+
+const elements = document.querySelectorAll("li");
+//console.log(elements);
+
+elements.forEach((word )=>{
+    if(word.innerText.includes("error")){
+        word.setAttribute("class", "error");
+    } else if(word.innerText.includes("success")) {
+        word.setAttribute("class", "success");
+    }
+});
 
 
 
