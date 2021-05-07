@@ -139,15 +139,27 @@ function listUser(){
 // element.classList.add("active")
 // console.log(element.classList);
 
-const element = document.querySelector('#today');
-console.log(element);
+// const element = document.querySelector('#today');
+// console.log(element);
 
-const myElement = document.createElement('p');
-myElement.innerText = "Thursday";
+// const myElement = document.createElement('p');
+// myElement.innerText = "Thursday";
 
-element.appendChild(myElement);
+// element.appendChild(myElement);
 
-console.log(element);
+// console.log(element);
+
+//event
+
+const element = document.querySelector("#btn").addEventListener('click', clickFunction);
+
+const element_1 = document.querySelector("#para").addEventListener("mouseenter", function(){
+    alert('What happened')
+})
+
+function clickFunction(){
+    alert("I am alert!!1")
+}
 
 
 
