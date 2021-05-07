@@ -119,16 +119,20 @@ function listUser(){
 // element.innerText = "Go to Clarusway";
 // console.log(element);
 
-const elements = document.querySelectorAll("li");
-//console.log(elements);
+// const elements = document.querySelectorAll("li");
+// //console.log(elements);
 
-elements.forEach((word )=>{
-    if(word.innerText.includes("error")){
-        word.setAttribute("class", "error");
-    } else if(word.innerText.includes("success")) {
-        word.setAttribute("class", "success");
-    }
-});
+// elements.forEach((word )=>{
+//     if(word.innerText.includes("error")){
+//         word.setAttribute("class", "error");
+//     } else if(word.innerText.includes("success")) {
+//         word.setAttribute("class", "success");
+//     }
+// });
+
+const element = document.querySelector(".hello");
+element.style.color = 'red';
+element.style.fontSize = "100px";
 
 
 

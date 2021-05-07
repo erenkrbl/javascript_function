@@ -4,3 +4,8 @@
 .error{
     color: red;
 }
+
+.hello {
+    color:blue;
+    font-size:40px;
+}
