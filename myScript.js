@@ -130,9 +130,15 @@ function listUser(){
 //     }
 // });
 
-const element = document.querySelector(".hello");
-element.style.color = 'red';
-element.style.fontSize = "100px";
+// const element = document.querySelector(".hello");
+// element.style.color = 'red';
+// element.style.fontSize = "100px";
+
+const element = document.querySelector('#my_banner');
+console.log(element.classList);
+element.classList.add("active")
+console.log(element.classList);
+
 
 
 
