@@ -36,11 +36,11 @@ function myFilterFunc(array, filterConditions) {
 
 // arrow function
 
-const fruits = myFilterFunc(plants, (plant) => plant.kind === 'fruits');
+//const fruits = myFilterFunc(plants, (plant) => plant.kind === 'fruits');
  
 
 
-console.log(fruits);
+//console.log(fruits);
 //console.log(vegetables);
 
 
@@ -85,3 +85,17 @@ const vegatables = plants.filter(function (plant) {
 console.log(fruits);
 console.log(vegatables);
 */
+
+
+const persons = [
+    {id : 10, firstName : 'Jason', age:23},
+    {id : 11, firstName : 'Jack', age:27},
+    {id : 12, firstName : 'John', age:35},
+    {id : 14, firstName : 'James', age:45},
+    {id : 15, firstName : 'Jordan', age:36},
+    {id : 16, firstName : 'Jimmy', age:35},
+];
+
+const myPerson = persons.filter((person) => person.age < 36);
+console.log(myPerson);
+console.log(persons);
