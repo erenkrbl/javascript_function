@@ -28,8 +28,18 @@
 // map
 
 const numbers = [1, 2, 3, 4, 5, 6];
-const newNumbers = numbers.map(num => {
+// const newNumbers = numbers.map(num => {
+//     return num * 2;
+// });
+
+// console.log(newNumbers);
+
+const myNum_1 = numbers.forEach((num) => {
+    return num * 2;
+});
+const myNum_2 = numbers.map((num) => {
     return num * 2;
 });
 
-console.log(newNumbers);
+console.log(myNum_1);
+console.log(myNum_2);
