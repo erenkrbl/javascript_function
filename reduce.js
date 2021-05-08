@@ -1,4 +1,4 @@
-const numbers = [1, 2, 3, 4, 5, 6];
+//const numbers = [1, 2, 3, 4, 5, 6];
 
 /*
 
@@ -59,7 +59,7 @@ console.log(newArrayWithReduce);
 */
 
 // reduce with find
-
+/*
 const findNumber = numbers.find(function(number, index) {
     return number === 2;
 });
@@ -77,5 +77,23 @@ const findNumberWithReduce = numbers.reduce(function(pre, curr, index) {
 }, undefined);
 
 console.log(findNumberWithReduce);
+*/
 
+const myArray = [1, 2, 3, 4, 5, 6];
+
+const sumOfNumbers = myArray.reduce((acc, curr)=> {
+    // console.log('acc: ', acc);
+    // console.log('curr: ', curr)
+    return acc + curr;
+});
+
+console.log(sumOfNumbers);
+
+const numbers = [3, 7, 1, 16, 9, 39, 24, 37];
+
+const maxNumber = numbers.reduce((acc, curr) => {
+    return acc > curr ? acc : curr;
+});
+
+console.log(maxNumber);
 
