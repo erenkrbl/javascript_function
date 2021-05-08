@@ -151,15 +151,15 @@ function listUser(){
 
 //event
 
-const element = document.querySelector("#btn").addEventListener('click', clickFunction);
+// const element = document.querySelector("#btn").addEventListener('click', clickFunction);
 
-const element_1 = document.querySelector("#para").addEventListener("mouseenter", function(){
-    alert('What happened')
-})
+// const element_1 = document.querySelector("#para").addEventListener("mouseenter", function(){
+//     alert('What happened')
+// })
 
-function clickFunction(){
-    alert("I am alert!!1")
-}
+// function clickFunction(){
+//     alert("I am alert!!1")
+// }
 
 
 
