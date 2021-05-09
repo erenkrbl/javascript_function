@@ -1,4 +1,4 @@
-.success {
+/* .success {
     color: green;
 }
 .error {
@@ -18,4 +18,19 @@
 .active {
     color: blue;
     text-decoration: line-through;
+} */
+
+.article {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.reading_count {
+    font-style: italic;
 }

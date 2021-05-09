@@ -26,6 +26,7 @@
 
 
 // map
+// map bize yeni bir array dönüyor
 
 const numbers = [1, 2, 3, 4, 5, 6];
 // const newNumbers = numbers.map(num => {
@@ -61,7 +62,7 @@ for (key in persons){
 
 
 // for of
-// arraylerde kullndığımız yapı arraylarin içinde dönüyor
+// arraylerde kullandığımız yapı arraylarin içinde dönüyor
 
 const userArray = [
     {id : 10, firstName : 'Jason', age:23},
