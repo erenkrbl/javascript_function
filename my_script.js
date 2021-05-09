@@ -30,3 +30,19 @@ const data = [{
 },
 ];
 
+const articles = document.querySelector("#articles");
+
+//console.log(articles);
+
+data.forEach(d => {
+    const articleElement = document.createElement("div");
+    articleElement.classList.add("article");
+    articleElement.innerHTML = `
+    <p class="title">${d.title}</p> 
+    <p>${d.desc}</p>
+    <p class="reading_count">${d.readCount}</p>
+    `;
+    articles.appendChild(articleElement);
+
+    console.log(articleElement);
+})
