@@ -31,10 +31,16 @@ const data = [{
 ];
 
 
-function loadArticles(){
+function loadArticles(readingCount){
+    let articleData = data;
     const articles = document.querySelector("#articles");
+    articles.innerHTML = "";
+
+    if(readingCount != undefined){
+        articleData = data.filter((art) => readingCount < art.readCount);
+    }
     //console.log(articles);
-    data.forEach(d => {
+    articleData.forEach(d => {
         const articleElement = document.createElement("div");
         articleElement.classList.add("article");
         articleElement.innerHTML = `
